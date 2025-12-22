@@ -1,0 +1,27 @@
+.header-navbar {
+    margin: 0px;
+    padding: 0px;
+    background: #252525ff;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+.footer {
+    padding: 1rem;
+    background-color: #000000;
+    text-align: center;
+    color: aliceblue;
+}
