@@ -4,16 +4,18 @@ import '../css/site.css'
 
 function Navbar() {
     return (
-        <nav className='header-navbar' >
-            <Link to="/" style={{ marginRight: "1rem", color: "#f1f1f1ff", textDecoration: "none" }}>Anasayfa</Link>
-            <Link to="/articles" style={{ marginRight: "1rem", color: "#f1f1f1ff", textDecoration: "none" }}>Makaleler</Link>
-            <Link to="/dashboard" style={{ marginRight: "1rem", color: "#f1f1f1ff", textDecoration: "none" }}>Dashboard</Link>
-            <Link to="project" style={{ marginRight: "1rem", color: "#f1f1f1ff", textDecoration: "none" }}>Proje Fikirleri</Link>
-            <Link to="/tools" style={{ marginRight: "1rem", color: "#f1f1f1ff", textDecoration: "none" }}>Kullanılan Araçlar</Link>
-            <Link to="/about" style={{ marginRight: "1rem", color: "#f1f1f1ff", textDecoration: "none" }}>Hakkımızda</Link>
-            <Link to="/login" style={{ marginRight: "1rem", color: "#f1f1f1ff", textDecoration: "none" }}>Giriş</Link>
-            <Link to="/register" style={{ color: "#f1f1f1ff", textDecoration: "none" }}>Kayıt</Link>
+
+        <nav className='header' >
+            <Link to="/" >Anasayfa</Link>
+            <Link to="/articles" >Makaleler</Link>
+            <Link to="/dashboard" >Dashboard</Link>
+            <Link to="project" >Proje Fikirleri</Link>
+            <Link to="/tools" >Kullanılan Araçlar</Link>
+            <Link to="/about" >Hakkımızda</Link>
+            <Link to="/login" >Giriş</Link>
+            <Link to="/register">Kayıt</Link>
         </nav>
+
     )
 }
 
