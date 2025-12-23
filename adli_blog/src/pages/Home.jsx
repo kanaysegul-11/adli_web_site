@@ -1,6 +1,7 @@
 // src/pages/Home.jsx
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import '../css/site.css'
 
 export default function Home() {
     // Yorumları localStorage'dan yükle
@@ -93,7 +94,7 @@ export default function Home() {
             {/* İçerikler */}
             <section className="text-center px-3">
                 <div className="container text-light bg-dark p-4">
-                    <h3 className="mb-5 text-center" style={{ color: "khaki" }}>
+                    <h3 className="mb-5 text-center" style={{ color: "khaki" }} >
                         Adli Bilişim (Digital Forensic) Nedir?
                     </h3>
                     <p>
@@ -103,7 +104,7 @@ export default function Home() {
                         çalışmalarının bütünüdür.
                     </p>
 
-                    <h3 className="mt-5 text-warning">Adli Bilişim İnceleme Süreçleri</h3>
+                    <h3 className="mt-5 " style={{ color: "khaki" }}>Adli Bilişim İnceleme Süreçleri</h3>
                     <ul>
                         <li><strong>İlk Müdahale:</strong> Olayın aydınlatılmasını sağlayacak dijital delillerin belirlenmesi ve bu sistemlerin güvenliğinin sağlanması.</li>
                         <li><strong>Adli Kopya Elde Etme:</strong> Delil bütünlüğünü bozmayacak şekilde imaj alınması.</li>
@@ -111,7 +112,7 @@ export default function Home() {
                         <li><strong>Raporlama:</strong> Bulguların anlaşılır biçimde sunulması.</li>
                     </ul>
 
-                    <h3 className="mt-5 text-warning">Adli Bilişim Türleri</h3>
+                    <h3 className="mt-5" style={{ color: "khaki" }}>Adli Bilişim Türleri</h3>
                     <ul>
                         <li><strong>Bilgisayar Adli Bilişimi:</strong> Silinen dosyaların kurtarılması, log dosyalarının incelenmesi, sistem geçmişi analizi.</li>
                         <li><strong>Mobil Cihaz Adli Bilişimi:</strong> Uygulama kalıntıları, silinen dosyalar, servis sağlayıcı günlükleri.</li>
@@ -119,7 +120,7 @@ export default function Home() {
                         <li><strong>Network Forensics:</strong> Ağ trafiği, saldırı analizi, veri tespiti.</li>
                     </ul>
 
-                    <h3 className="mt-5 text-warning">Türkiye’de ve Dünyada Adli Bilişim Uygulamaları</h3>
+                    <h3 className="mt-5" style={{ color: "khaki" }}>Türkiye’de ve Dünyada Adli Bilişim Uygulamaları</h3>
                     <p>
                         Adli bilişim, Türkiye’de ve dünya genelinde emniyet birimleri, özel şirketler ve akademik kurumlar tarafından
                         aktif olarak kullanılmaktadır. Bu alandaki gelişmeler, teknolojinin gelişmesiyle birlikte paralel biçimde artış
@@ -134,7 +135,7 @@ export default function Home() {
                         bağlı olarak siber suçlarla mücadelede önemli bir rol üstlenmektedir.
                     </p>
 
-                    <h3 className="mt-5 text-warning">Adli Bilişim Süreçleri Detaylı Açıklama</h3>
+                    <h3 className="mt-5" style={{ color: "khaki" }}>Adli Bilişim Süreçleri Detaylı Açıklama</h3>
                     <h5>1) Delil Toplama</h5>
                     <p>Dijital ortamlarda gerçekleşen suçların kanıtlarının güvenli ve yasal olarak elde edilmesini kapsar. Bu süreç büyük bir titizlikle yürütülmelidir.</p>
                     <p><strong>Önemi:</strong> Dijital deliller kolayca değiştirilebilir, silinebilir, kaybolabilir. Yanlış yapılan bir işlem delilin geçersiz sayılmasına neden olabilir.</p>
@@ -146,7 +147,7 @@ export default function Home() {
                     <h5>3) Raporlama ve Hukuki Süreç</h5>
                     <p>Delil kaynağı, elde edilme yöntemi, analiz süreci ve sonuçlar açık ve sistematik biçimde belgelenmelidir. Mahkemelerde kullanılabilir olması için net bir dil şarttır.</p>
 
-                    <h3 className="mt-4 text-warning">Adli Bilişimde Kullanılan Araçlar</h3>
+                    <h3 className="mt-4" style={{ color: "khaki" }}>Adli Bilişimde Kullanılan Araçlar</h3>
                     <h5>Yazılımsal Araçlar</h5>
                     <ul>
                         <li><strong>Autopsy:</strong> Açık kaynaklı, disk imajı inceleme, silinmiş veri kurtarma, zararlı yazılım analizi.</li>
@@ -187,7 +188,7 @@ export default function Home() {
             </section>
 
             {/* Yorumlar */}
-            <section className="mt-4 border border-light rounded p-3 bg-black">
+            <section className="mt-4 border border-light rounded p-3 ">
                 <h3 className="text-warning">💬 Yorumlar</h3>
                 {comments.map(a => (
                     <div key={a.id} className="border border-secondary mb-2 p-2 bg-dark text-light">

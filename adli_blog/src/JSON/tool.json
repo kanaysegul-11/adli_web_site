@@ -1,0 +1,28 @@
+{
+    "tool": [
+        {
+            "id": 0,
+            "title": "FTK Imager",
+            "text": "Disk imajı almak ve analiz etmek için kullanılan popüler bir adli bilişim aracıdır.",
+            "pdf": "Adli Bilişim Alanında Ağ Analizi.pdf"
+        },
+        {
+            "id": 1,
+            "title": "Autopsy",
+            "text": "Bir dijital adli bilişim aracı olan açık kaynak  adli analiz platformu ve kullanıcı dostu bir arayüze sahiptir.",
+            "pdf": "Adli_Bilişim_İncelemelerinde_Birebir_Kopya_Alınmasının_İmaj_Almak.pdf"
+        },
+        {
+            "id": 2,
+            "title": "Wireshark",
+            "text": "Ağ trafiğini analiz etmek için kullanılan güçlü ve  açık kaynak kodlu bir araçtır.",
+            "pdf": "Biyometrik Analiz.pdf"
+        },
+        {
+            "id": 3,
+            "title": "Volatility",
+            "text": "RAM bellek analizleri için kullanılan açık kaynak kodlu bir araçtır.",
+            "pdf": "adli-bilisim.pdf"
+        }
+    ]
+}

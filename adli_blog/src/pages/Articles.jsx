@@ -1,5 +1,7 @@
+// src/pages/Articles.jsx
 import React, { useEffect, useState } from "react";
-
+import ArticleCard from "../component/ArticleCard";   // 🔑 import ekle
+import "../css/site.css";
 
 function Articles() {
     const [articles, setArticles] = useState([]);
@@ -7,35 +9,26 @@ function Articles() {
     useEffect(() => {
         fetch("http://localhost:3000/articles")
             .then(res => res.json())
-            .then(data => setArticles(data))
-            .catch(err => console.error(err));
+            .then(data => {
+                if (Array.isArray(data)) {
+                    setArticles(data);
+                } else if (data.articles) {
+                    setArticles(data.articles);
+                }
+            })
+            .catch(err => console.error("Veri çekilemedi:", err));
     }, []);
 
     return (
-        <div style={{ padding: "20px" }}>
-            <h2>Makale Listesi</h2>
-            <div style={{ display: "grid", gap: "16px" }}>
+        <div className="articles-page">
+            <h2 className="articles-title">📚 Makale Listesi</h2>
+            <div className="articles-grid">
                 {articles.map(article => (
-                    <div
-                        key={article.id}
-                        style={{ border: "1px solid #ccc", padding: "12px", borderRadius: "8px" }}
-                    >
-                        <h3>{article.title}</h3>
-                        <p><strong>Yazar:</strong> {article.author}</p>
-                        <a
-                            href={`/pdf/${article.pdf}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={{ color: "blue" }}
-                        >
-                            PDF Görüntüle
-                        </a>
-                    </div>
+                    <ArticleCard key={article.id} article={article} />
                 ))}
             </div>
         </div>
-
     );
 }
 
-export default Articles
+export default Articles;

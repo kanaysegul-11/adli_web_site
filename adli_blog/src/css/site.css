@@ -7,19 +7,32 @@ body {
     font-family: Arial, sans-serif;
 }
 
+
 .header {
-    height: 70px;
-    padding: 20px;
     background-color: #252525;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
+    /* linkler sola, logo sağa */
     align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
     padding: 10px 20px;
-    box-sizing: border-box;
-    width: 100%;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: khaki;
+}
+
+.nav-logo img {
+    height: 40px;
+    /* logonun boyutu */
+    width: auto;
 }
 
 .header a {
@@ -30,8 +43,9 @@ body {
 }
 
 .header a:hover {
-    color: rgb(238, 197, 108);
+    color: khaki;
 }
+
 
 @media (max-width:950px) {
 
@@ -187,8 +201,70 @@ button:hover {
     color: #fff;
 }
 
+.footer {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
 ul {
     list-style-type: none;
     padding-left: 0;
     margin: 0;
+}
+
+.articles-page {
+    padding: 2rem;
+    background-color: #252525;
+    /* anasayfa ile uyumlu */
+    color: #fff;
+}
+
+.articles-title {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 2rem;
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.article-card {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 1.2rem;
+    border: 1px solid #333;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.article-title {
+    color: khaki;
+    margin-bottom: 0.5rem;
+}
+
+.article-author {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.article-link {
+    color: deepskyblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.article-link:hover {
+    color: khaki;
 }
