@@ -10,6 +10,7 @@ import About from './pages/About'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import Footer from './component/Footer';
+import './css/site.css'
 
 
 function App() {
@@ -26,7 +27,9 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
       </Routes>
+      <div className='footer-space'></div>
       <Footer />
+      <small className='footer-title' >© 2025 Adli Bilişim Blog | Siber dünyada iz sürüyoruz</small>
     </Router>
   )
 }

@@ -20,27 +20,27 @@ function About() {
     }, [index, fullText]);
 
     return (
+        <div className="about-bg">
 
-
-        <div className="about">
-            <h1 style={{ textAlign: "center", color: "khaki" }}>{text}</h1>
-            <br />
-            <h5 className="text-light">
-                Dijital adli bilişim alanında uzmanlaşmış bir içerik platformuyuz. Amacımız, teknik bilgiyi herkes için anlaşılır ve erişilebilir hale getirmek. Kullanıcı dostu yapımız sayesinde hem profesyonellerin hem de meraklıların güncel gelişmeleri takip edebileceği, etkileşimli bir ortam sunuyoruz.</h5> <br />
-
-            <h5 className="pre">
+            <div className="about">
+                <h1 style={{ textAlign: "center", color: "khaki" }}>{text}</h1>
                 <br />
-                Blogumuz;<br />
-                - 🔍 Adli bilişim incelemeleri ve teknik analizler,<br />
-                - 📰 Güncel teknoloji haberleri,<br />
-                - 💬 Yorum ve cevap bölümleri ile sürekli gelişen bir topluluk,<br />
-                - 📂 Kaynak ve doküman paylaşımları ile öğrenmeyi destekleyen bir yapı,üzerine kuruludur.<br />
-                Bizim için en önemli değer, bilgi paylaşımını kolaylaştırmak ve dijital güvenlik bilincini artırmaktır.
+                <h5 className="text-light">
+                    Dijital adli bilişim alanında uzmanlaşmış bir içerik platformuyuz. Amacımız, teknik bilgiyi herkes için anlaşılır ve erişilebilir hale getirmek. Kullanıcı dostu yapımız sayesinde hem profesyonellerin hem de meraklıların güncel gelişmeleri takip edebileceği, etkileşimli bir ortam sunuyoruz.</h5> <br />
 
-            </h5>
+                <h5 className="pre">
+                    <br />
+                    Blogumuz;<br />
+                    - 🔍 Adli bilişim incelemeleri ve teknik analizler,<br />
+                    - 📰 Güncel teknoloji haberleri,<br />
+                    - 💬 Yorum ve cevap bölümleri ile sürekli gelişen bir topluluk,<br />
+                    - 📂 Kaynak ve doküman paylaşımları ile öğrenmeyi destekleyen bir yapı,üzerine kuruludur.<br />
+                    Bizim için en önemli değer, bilgi paylaşımını kolaylaştırmak ve dijital güvenlik bilincini artırmaktır.
+
+                </h5>
+            </div>
+
         </div>
-
-
 
     );
 }

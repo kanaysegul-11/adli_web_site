@@ -60,7 +60,7 @@ export default function Home() {
     }, []);
 
     return (
-        <div className="container-fluid bg-dark text-light p-0">
+        <div className="bg-dark text-light p-2">
             {/* Carousel */}
             <div id="mainCarousel" className="carousel slide mb-4" data-bs-ride="carousel">
                 <div className="carousel-inner">
@@ -94,7 +94,7 @@ export default function Home() {
             {/* İçerikler */}
             <section className="text-center px-3">
                 <div className="container text-light bg-dark p-4">
-                    <h3 className="mb-5 text-center" style={{ color: "khaki" }} >
+                    <h3 className="mb-5 text-center" style={{ color: "khaki" }}  >
                         Adli Bilişim (Digital Forensic) Nedir?
                     </h3>
                     <p>
@@ -104,23 +104,23 @@ export default function Home() {
                         çalışmalarının bütünüdür.
                     </p>
 
-                    <h3 className="mt-5 " style={{ color: "khaki" }}>Adli Bilişim İnceleme Süreçleri</h3>
+                    <h3 className="mt-5 " >Adli Bilişim İnceleme Süreçleri</h3>
                     <ul>
-                        <li><strong>İlk Müdahale:</strong> Olayın aydınlatılmasını sağlayacak dijital delillerin belirlenmesi ve bu sistemlerin güvenliğinin sağlanması.</li>
-                        <li><strong>Adli Kopya Elde Etme:</strong> Delil bütünlüğünü bozmayacak şekilde imaj alınması.</li>
-                        <li><strong>İnceleme:</strong> Elde edilen kopyalar üzerinden teknik analiz yapılması.</li>
-                        <li><strong>Raporlama:</strong> Bulguların anlaşılır biçimde sunulması.</li>
+                        <li ><strong style={{ color: "khaki" }}>İlk Müdahale:</strong> Olayın aydınlatılmasını sağlayacak dijital delillerin belirlenmesi ve bu sistemlerin güvenliğinin sağlanması.</li>
+                        <li><strong style={{ color: "khaki" }}>Adli Kopya Elde Etme:</strong> Delil bütünlüğünü bozmayacak şekilde imaj alınması.</li>
+                        <li><strong style={{ color: "khaki" }}>İnceleme:</strong> Elde edilen kopyalar üzerinden teknik analiz yapılması.</li>
+                        <li><strong style={{ color: "khaki" }}>Raporlama:</strong> Bulguların anlaşılır biçimde sunulması.</li>
                     </ul>
 
-                    <h3 className="mt-5" style={{ color: "khaki" }}>Adli Bilişim Türleri</h3>
+                    <h3 className="mt-5" >Adli Bilişim Türleri</h3>
                     <ul>
-                        <li><strong>Bilgisayar Adli Bilişimi:</strong> Silinen dosyaların kurtarılması, log dosyalarının incelenmesi, sistem geçmişi analizi.</li>
-                        <li><strong>Mobil Cihaz Adli Bilişimi:</strong> Uygulama kalıntıları, silinen dosyalar, servis sağlayıcı günlükleri.</li>
-                        <li><strong>Memory Forensics:</strong> RAM üzerindeki uçucu verilerin analizi.</li>
-                        <li><strong>Network Forensics:</strong> Ağ trafiği, saldırı analizi, veri tespiti.</li>
+                        <li><strong style={{ color: "khaki" }}>Bilgisayar Adli Bilişimi:</strong> Silinen dosyaların kurtarılması, log dosyalarının incelenmesi, sistem geçmişi analizi.</li>
+                        <li><strong style={{ color: "khaki" }}>Mobil Cihaz Adli Bilişimi:</strong> Uygulama kalıntıları, silinen dosyalar, servis sağlayıcı günlükleri.</li>
+                        <li><strong style={{ color: "khaki" }}>Memory Forensics:</strong> RAM üzerindeki uçucu verilerin analizi.</li>
+                        <li><strong style={{ color: "khaki" }}>Network Forensics:</strong> Ağ trafiği, saldırı analizi, veri tespiti.</li>
                     </ul>
 
-                    <h3 className="mt-5" style={{ color: "khaki" }}>Türkiye’de ve Dünyada Adli Bilişim Uygulamaları</h3>
+                    <h3 className="mt-5" >Türkiye’de ve Dünyada Adli Bilişim Uygulamaları</h3>
                     <p>
                         Adli bilişim, Türkiye’de ve dünya genelinde emniyet birimleri, özel şirketler ve akademik kurumlar tarafından
                         aktif olarak kullanılmaktadır. Bu alandaki gelişmeler, teknolojinin gelişmesiyle birlikte paralel biçimde artış
@@ -135,38 +135,37 @@ export default function Home() {
                         bağlı olarak siber suçlarla mücadelede önemli bir rol üstlenmektedir.
                     </p>
 
-                    <h3 className="mt-5" style={{ color: "khaki" }}>Adli Bilişim Süreçleri Detaylı Açıklama</h3>
-                    <h5>1) Delil Toplama</h5>
+                    <h3 className="mt-5" >Adli Bilişim Süreçleri Detaylı Açıklama</h3>
+                    <h5 style={{ color: "khaki" }}>1) Delil Toplama</h5>
                     <p>Dijital ortamlarda gerçekleşen suçların kanıtlarının güvenli ve yasal olarak elde edilmesini kapsar. Bu süreç büyük bir titizlikle yürütülmelidir.</p>
-                    <p><strong>Önemi:</strong> Dijital deliller kolayca değiştirilebilir, silinebilir, kaybolabilir. Yanlış yapılan bir işlem delilin geçersiz sayılmasına neden olabilir.</p>
+                    <p><strong style={{ color: "khaki" }}>Önemi:</strong> Dijital deliller kolayca değiştirilebilir, silinebilir, kaybolabilir. Yanlış yapılan bir işlem delilin geçersiz sayılmasına neden olabilir.</p>
 
-                    <h5>2) Delil Analizi</h5>
+                    <h5 style={{ color: "khaki" }}>2) Delil Analizi</h5>
                     <p>Toplanan dijital verilerin detaylı biçimde incelenerek suçla ilişkili olanların ortaya çıkarılmasıdır.</p>
-                    <p><strong>Önemi:</strong> Gizlenmiş, silinmiş, şifrelenmiş verilerin ortaya çıkarılması; kimlik avı, yasa dışı işlemler gibi olayların aydınlatılması.</p>
-
-                    <h5>3) Raporlama ve Hukuki Süreç</h5>
+                    <p><strong style={{ color: "khaki" }}>Önemi:</strong> Gizlenmiş, silinmiş, şifrelenmiş verilerin ortaya çıkarılması; kimlik avı, yasa dışı işlemler gibi olayların aydınlatılması.</p>
+                    <h5 style={{ color: "khaki" }}>3) Raporlama ve Hukuki Süreç</h5>
                     <p>Delil kaynağı, elde edilme yöntemi, analiz süreci ve sonuçlar açık ve sistematik biçimde belgelenmelidir. Mahkemelerde kullanılabilir olması için net bir dil şarttır.</p>
 
-                    <h3 className="mt-4" style={{ color: "khaki" }}>Adli Bilişimde Kullanılan Araçlar</h3>
-                    <h5>Yazılımsal Araçlar</h5>
+                    <h3 className="mt-4" >Adli Bilişimde Kullanılan Araçlar</h3>
+                    <h5 style={{ color: "khaki" }}>Yazılımsal Araçlar</h5>
                     <ul>
-                        <li><strong>Autopsy:</strong> Açık kaynaklı, disk imajı inceleme, silinmiş veri kurtarma, zararlı yazılım analizi.</li>
-                        <li><strong>FTK (Forensic Toolkit):</strong> Dijital delil analizinde kullanılır.</li>
-                        <li><strong>EnCase:</strong> En yaygın kullanılan adli bilişim analiz aracıdır.</li>
+                        <li><strong style={{ color: "khaki" }}>Autopsy:</strong> Açık kaynaklı, disk imajı inceleme, silinmiş veri kurtarma, zararlı yazılım analizi.</li>
+                        <li><strong style={{ color: "khaki" }}>FTK (Forensic Toolkit):</strong> Dijital delil analizinde kullanılır.</li>
+                        <li><strong style={{ color: "khaki" }}>EnCase:</strong> En yaygın kullanılan adli bilişim analiz aracıdır.</li>
                     </ul>
 
-                    <h5>Donanımsal Araçlar</h5>
+                    <h5 style={{ color: "khaki" }}>Donanımsal Araçlar</h5>
                     <ul>
-                        <li><strong>Write Blocker:</strong> Sabit disklere müdahale etmeden kopyalama sağlar.</li>
-                        <li><strong>Adli Kopyalama Cihazları:</strong> Disk imajı alma ve inceleme süreçlerinde kullanılır.</li>
+                        <li><strong style={{ color: "khaki" }}>Write Blocker:</strong> Sabit disklere müdahale etmeden kopyalama sağlar.</li>
+                        <li><strong style={{ color: "khaki" }}>Adli Kopyalama Cihazları:</strong> Disk imajı alma ve inceleme süreçlerinde kullanılır.</li>
                     </ul>
                 </div>
 
 
-            </section>
+            </section >
 
             {/* Haberler */}
-            <section className="mt-4">
+            < section className="mt-4" >
                 <h4 className="bg-black text-warning p-2">📰 Milliyet Teknoloji Haberleri</h4>
                 <div className="d-grid gap-3 p-3" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))" }}>
                     {news.slice(0, 6).map((n, i) => (
@@ -185,31 +184,33 @@ export default function Home() {
                         </div>
                     ))}
                 </div>
-            </section>
+            </ section>
 
             {/* Yorumlar */}
-            <section className="mt-4 border border-light rounded p-3 ">
-                <h3 className="text-warning">💬 Yorumlar</h3>
-                {comments.map(a => (
-                    <div key={a.id} className="border border-secondary mb-2 p-2 bg-dark text-light">
-                        <strong>{a.user}</strong>
-                        <p>{a.text}</p>
-                        {Array.isArray(a.replies) && a.replies.map((r, i) => (
-                            <div key={i} className="ms-3 text-info">↳ <strong>{r.user}</strong>: {r.text}</div>
-                        ))}
-                        <textarea
-                            value={replyText[a.id] || ""}
-                            onChange={(e) => setReplyText({ ...replyText, [a.id]: e.target.value })}
-                            placeholder="Cevabınızı yazın..."
-                            className="form-control mt-2"
-                            rows="2"
-                        />
-                        <button onClick={() => handleAddReply(a.id)} className="btn btn-warning btn-sm mt-2">
-                            Cevapla
-                        </button>
-                    </div>
-                ))}
-                <form onSubmit={handleAddComment} className="mt-3">
+            < section className=" border border-light rounded p-3 mb-4  bg-dark" >
+                <h3 className="text-warning ">💬 Yorumlar</h3>
+                {
+                    comments.map(a => (
+                        <div key={a.id} className="border border-secondary mb-3 p-2  text-light" >
+                            <strong>{a.user}</strong>
+                            <p>{a.text}</p>
+                            {Array.isArray(a.replies) && a.replies.map((r, i) => (
+                                <div key={i} className="ms-3 text-info">↳ <strong>{r.user}</strong>: {r.text}</div>
+                            ))}
+                            <textarea
+                                value={replyText[a.id] || ""}
+                                onChange={(e) => setReplyText({ ...replyText, [a.id]: e.target.value })}
+                                placeholder="Cevabınızı yazın..."
+                                className="form-control mt-2"
+                                rows="2"
+                            />
+                            <button onClick={() => handleAddReply(a.id)} className="btn btn-warning btn-sm mt-2">
+                                Cevapla
+                            </button>
+                        </div>
+                    ))
+                }
+                <form onSubmit={handleAddComment}>
                     <textarea
                         value={newComment}
                         onChange={(e) => setNewComment(e.target.value)}
@@ -219,7 +220,7 @@ export default function Home() {
                     />
                     <button type="submit" className="btn btn-warning">Yorum Yap</button>
                 </form>
-            </section>
-        </div>
+            </ section>
+        </div >
     );
 }

@@ -1,15 +1,16 @@
 import React from 'react'
 
-function CommentBox() {
+function CommentBox({ tool }) {
     return (
         <div className='tool-card'>
-            <img src={tool.img} alt={tool.title} />
+            <div className='tool-img'>
+                <img src={tool.img} alt={tool.title} /></div>
             <h3>{tool.title}</h3>
             <p>{tool.text}</p>
             <a href={tool.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                classame="tool-button"
+                className="btn btn-sm btn-outline-light"
             >
                 Araçların Detayına Git →
             </a>
