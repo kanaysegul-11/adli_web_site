@@ -11,7 +11,7 @@ function Navbar() {
             </div>
             <div className='nav-links'>
                 <Link to="/" >Anasayfa</Link>
-                <Link to="/tools" >Kullanılan Araçlar</Link>
+                <Link to="/tool" >Kullanılan Araçlar</Link>
                 <Link to="project" >Proje Fikirleri</Link>
                 <Link to="/articles" >Makaleler</Link>
                 <Link to="/dashboard" >Dashboard</Link>

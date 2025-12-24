@@ -268,3 +268,21 @@ ul {
 .article-link:hover {
     color: khaki;
 }
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+.tool-card {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+}

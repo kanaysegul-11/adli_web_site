@@ -1,6 +1,6 @@
 // src/pages/Articles.jsx
 import React, { useEffect, useState } from "react";
-import ArticleCard from "../component/ArticleCard";   // 🔑 import ekle
+import ArticleCard from "../component/ArticleCard";
 import "../css/site.css";
 
 function Articles() {

@@ -1,28 +1,36 @@
 {
-    "tool": [
+    "tools": [
         {
             "id": 0,
+            "img": "src/images/FTK.png",
             "title": "FTK Imager",
             "text": "Disk imajı almak ve analiz etmek için kullanılan popüler bir adli bilişim aracıdır.",
-            "pdf": "Adli Bilişim Alanında Ağ Analizi.pdf"
+            "pdf": "Adli Bilişim Alanında Ağ Analizi.pdf",
+            "link": "https://accessdata.com/product-download/ftk-imager-version-4-2-1"
         },
         {
             "id": 1,
+            "img": "src/images/autopsy.jpg",
             "title": "Autopsy",
             "text": "Bir dijital adli bilişim aracı olan açık kaynak  adli analiz platformu ve kullanıcı dostu bir arayüze sahiptir.",
-            "pdf": "Adli_Bilişim_İncelemelerinde_Birebir_Kopya_Alınmasının_İmaj_Almak.pdf"
+            "pdf": "Adli_Bilişim_İncelemelerinde_Birebir_Kopya_Alınmasının_İmaj_Almak.pdf",
+            "link": "https://www.sleuthkit.org/autopsy/download.php"
         },
         {
             "id": 2,
+            "img": "src/images/wireshark.png",
             "title": "Wireshark",
             "text": "Ağ trafiğini analiz etmek için kullanılan güçlü ve  açık kaynak kodlu bir araçtır.",
-            "pdf": "Biyometrik Analiz.pdf"
+            "pdf": "Biyometrik Analiz.pdf",
+            "link": "https://www.sleuthkit.org/autopsy/download.php"
         },
         {
             "id": 3,
+            "img": "src/images/vovality.jpeg",
             "title": "Volatility",
             "text": "RAM bellek analizleri için kullanılan açık kaynak kodlu bir araçtır.",
-            "pdf": "adli-bilisim.pdf"
+            "pdf": "adli-bilisim.pdf",
+            "link": "https://www.sleuthkit.org/autopsy/download.php"
         }
     ]
 }
