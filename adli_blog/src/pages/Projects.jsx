@@ -1,5 +1,6 @@
 import React from 'react'
-import '../css/site.css'
+import '../css/project.css'
+import '../css/global.css'
 
 function Projects() {
     return (

@@ -1,0 +1,23 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+.logo-social {
+    display: flex;
+    gap: 15px;
+    padding: 30px;
+}
+
+.footer-title {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.footer-space {
+    height: 10px;
+    background-color: black;
+}

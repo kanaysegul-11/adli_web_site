@@ -1,7 +1,8 @@
 // src/pages/Articles.jsx
 import React, { useEffect, useState } from "react";
 import ArticleCard from "../component/ArticleCard";
-import "../css/site.css";
+import "../css/articles.css";
+import '../css/global.css';
 
 function Articles() {
     const [articles, setArticles] = useState([]);

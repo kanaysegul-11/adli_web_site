@@ -1,8 +1,8 @@
 
 import { useState, useEffect, React } from "react";
 import axios from "axios";
-import ArticleCard from "../component/ArticleCard";
-import '../css/site.css'
+import '../css/dashboard.css'
+import '../css/global.css';
 
 function Dashboard() {
     const [articles, setArticles] = useState([]);
@@ -20,29 +20,31 @@ function Dashboard() {
 
 
     return (
-        <div className="dashboard">
-            <h2>📊 Dashboard</h2>
-            <div className="stats-grid">
-                <div className="stat-card">
-                    <h3>Toplam Yazı</h3>
-                    <p>{totalArticles}</p>
+        <div className="boody">
+            <div className="dashboard">
+                <h2 style={{ color: "khaki" }}>📊 Dashboard</h2>
+                <div className="stats-grid">
+                    <div className="stat-card">
+                        <h3>Toplam Yazı</h3>
+                        <p>{totalArticles}</p>
+                    </div>
+                    <div className="stat-card">
+                        <h3>Kategori Sayısı</h3>
+                        <p>{categories.length}</p>
+                    </div>
                 </div>
-                <div className="stat-card">
-                    <h3>Kategori Sayısı</h3>
-                    <p>{categories.length}</p>
-                </div>
-            </div>
 
-            <h3 className="recent-title">🕓 Son Yazılar</h3>
-            <ul className="recent-list">
-                {recentArticles.map(article => (
-                    <li key={article.id}>
-                        <strong>{article.title}</strong> – {new Date(article.date).toLocaleDateString("tr-TR", {
-                            day: "2-digit", month: "short", year: "numeric"
-                        })}
-                    </li>
-                ))}
-            </ul>
+                <h3 className="recent-title">🕓 Son Yazılar</h3>
+                <ul className="recent-list">
+                    {recentArticles.map(article => (
+                        <li key={article.id}>
+                            <strong>{article.title}</strong> – {new Date(article.date).toLocaleDateString("tr-TR", {
+                                day: "2-digit", month: "short", year: "numeric"
+                            })}
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </div>
 
 

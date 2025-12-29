@@ -1,0 +1,39 @@
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.content-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.section-title {
+    margin-top: 2rem;
+    color: khaki;
+}
+
+.news-section {
+    margin-top: 2rem;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: black;
+}
+
+.news-card {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    overflow: hidden;
+}

@@ -1,0 +1,16 @@
+.tools-page {
+    background-color: #252525;
+}
+
+.tool-card {
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 8px;
+    background-color: #333;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.tool-card:hover {
+    transform: scale(1.05);
+}

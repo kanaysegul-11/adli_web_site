@@ -1,0 +1,16 @@
+.dashboard {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.stat-card {
+    background-color: #2a2a2a;
+    padding: 16px;
+    border-radius: 8px;
+}

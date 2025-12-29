@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-
+import "../css/auth.css";
+import '../css/global.css';
 function Login() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
@@ -17,13 +18,7 @@ function Login() {
     };
 
     return (
-        <div style={{
-            maxWidth: "400px",
-            margin: "50px auto",
-            backgroundColor: "#1f1f1f",
-            padding: "20px",
-            borderRadius: "8px"
-        }}>
+        <div className="boody">
             <h2 style={{ color: "khaki", textAlign: "center" }}>Giriş Yap</h2>
             <form onSubmit={handleSubmit}>
                 <input

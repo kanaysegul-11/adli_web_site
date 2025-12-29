@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "../css/site.css";
+import "../css/toolspage.css";
 import CommentBox from "../component/CommentBox";
+import '../css/global.css'
 
 function ToolsPage() {
     const [tools, setTools] = useState([]);

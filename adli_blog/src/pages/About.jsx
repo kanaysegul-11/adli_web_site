@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from "react";
-import '../css/site.css';
+import '../css/global.css';
+import '../css/about.css';
 
 function About() {
 

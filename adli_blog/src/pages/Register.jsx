@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import "../css/auth.css";
+import '../css/global.css'
 
 function Register() {
     const [username, setUsername] = useState("");
@@ -17,13 +19,7 @@ function Register() {
     };
 
     return (
-        <div style={{
-            maxWidth: "400px",
-            margin: "50px auto",
-            backgroundColor: "#1f1f1f",
-            padding: "20px",
-            borderRadius: "8px"
-        }}>
+        <div className="boody">
             <h2 style={{ color: "khaki", textAlign: "center" }}>Kayıt Ol</h2>
             <form onSubmit={handleSubmit}>
                 <input
