@@ -20,6 +20,17 @@
     color: khaki;
 }
 
+
+.content-section p {
+    font-size: 18px;
+}
+
+.content-section ul {
+    text-align: left;
+    margin: 1rem auto;
+    max-width: 800px;
+}
+
 .news-section {
     margin-top: 2rem;
 }
@@ -36,4 +47,88 @@
     background-color: #1f1f1f;
     border-radius: 10px;
     overflow: hidden;
+}
+
+.news-section {
+    margin-top: 2rem;
+}
+
+.news-title {
+    background-color: black;
+    color: khaki;
+    padding: 10px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: black;
+}
+
+.news-card {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.news-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 1rem;
+}
+
+.news-content h3 {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.news-content p {
+    font-size: 0.85rem;
+    color: #eee;
+    white-space: pre-line;
+}
+
+.news-content a {
+    color: khaki;
+    text-decoration: none;
+}
+
+.news-content small {
+    display: block;
+    margin-top: 5px;
+    color: gray;
+}
+
+textarea {
+    width: 100%;
+    margin-top: 5px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+.reply {
+    margin-left: 20px;
+    color: deepskyblue;
+}
+
+button {
+    background-color: khaki;
+    color: black;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 6px 12px;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: goldenrod;
+    color: #fff;
 }

@@ -188,17 +188,18 @@ export default function Home() {
             </ section>
 
             {/* Yorumlar */}
-            < section className=" border border-light rounded p-3 mb-4  bg-dark" >
+            < section className=" border border-light rounded p-3 mb-4 " >
                 <h3 className="text-warning ">💬 Yorumlar</h3>
                 {
                     comments.map(a => (
                         <div key={a.id} className="border border-secondary mb-3 p-2  text-light" >
-                            <strong>{a.user}</strong>
-                            <p>{a.text}</p>
+                            <strong style={{ color: " #f3bd48" }}> {a.user}: </strong>{a.text}
+
                             {Array.isArray(a.replies) && a.replies.map((r, i) => (
-                                <div key={i} className="ms-3 text-info">↳ <strong>{r.user}</strong>: {r.text}</div>
+                                <div key={i} className="ms-3 " >↳<strong style={{ color: " #f3bd48" }}>{r.user}</strong>: {r.text}</div>
                             ))}
                             <textarea
+                                name="message"
                                 value={replyText[a.id] || ""}
                                 onChange={(e) => setReplyText({ ...replyText, [a.id]: e.target.value })}
                                 placeholder="Cevabınızı yazın..."

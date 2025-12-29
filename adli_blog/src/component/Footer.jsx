@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import '../css/site.css'
+import '../css/footer.css'
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function Footer() {
