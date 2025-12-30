@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import "../css/toolspage.css";
+import "../css/tools.css";
 import CommentBox from "../component/CommentBox";
 import '../css/global.css'
+
 
 function ToolsPage() {
     const [tools, setTools] = useState([]);
@@ -19,19 +20,19 @@ function ToolsPage() {
             .catch(err => console.error("Veri çekilemedi:", err));
     }, []);
     return (
+        <div className="position">
+            <div className="tools-page">
+                <h2 className="tools-title">🛠️ Adli Bilişim
+                    Araçları</h2>
+                <div className="tools-grid">
+                    {tools.map(tool => (
+                        <CommentBox key={tool.id} tool={tool} />
+                    ))}
 
-        <div className="tools-page">
-            <h2 className="tools-title">🛠️ Adli Bilişim
-                Araçları</h2>
-            <div className="tools-grid">
-                {tools.map(tool => (
-                    <CommentBox key={tool.id} tool={tool} />
-                ))}
-
+                </div>
             </div>
+
         </div>
-
-
 
 
     )

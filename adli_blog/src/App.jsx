@@ -10,7 +10,8 @@ import About from './pages/About'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import Footer from './component/Footer';
-import './css/site.css'
+import './css/global.css';
+
 
 
 function App() {

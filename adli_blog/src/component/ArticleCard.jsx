@@ -1,6 +1,6 @@
 
 import React from "react";
-
+import "../css/articles.css";
 export default function ArticleCard({ article }) {
     return (
         <div className="article-card">

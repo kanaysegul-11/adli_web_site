@@ -9,26 +9,26 @@ function Footer() {
             <div className="container text-md-start text-center mt-3">
                 <div className="row">
 
-                    <div className="col-md-4 ">
-                        <h5 className="text-uppercase fw-bold mb-3">Adli Bilişim Platformu</h5>
-                        <p>Adli bilişim ve siber güvenlik alanında uzman ekibimiz, dijital delil inceleme, olay müdahalesi ve güvenlik danışmanlığı hizmetleri sunmaktadır.</p>
-                        <p className="small " style={{ color: "white" }}>© 2025 Adli Bilişim Platformu - Tüm Hakları Saklıdır.</p>
+                    <div className="col-md-4 ms-4 ">
+                        <h5 className=" fw-bold mb-3 ms-3">ADLİ BİLİŞİM FORMU</h5>
+                        <p className='ms-3'>Adli bilişim ve siber güvenlik alanında uzman ekibimiz, dijital delil inceleme, olay müdahalesi ve güvenlik danışmanlığı hizmetleri sunmaktadır.</p>
+                        <p className="small ms-3" style={{ color: "white" }}>© 2025 Adli Bilişim Platformu - Tüm Hakları Saklıdır.</p>
                     </div>
 
 
-                    <div className="col-md-4 mb-4">
-                        <h5 className="text-uppercase fw-bold mb-3">İletişim</h5>
-                        <ul className="list-unstyled">
+                    <div className="col-md-4 mb-4 ms-4">
+                        <h5 className=" fw-bold mb-3 ms-5">İLETİŞİM</h5>
+                        <ul className="list-unstyled ms-5">
                             <li><i className="bi bi-geo-alt-fill me-2"></i>Üsküdar, İstanbul, Türkiye</li>
-                            <li><i className="bi bi-envelope-fill me-2"></i><a href="mailto:info@adlibilisim.com" className="text-light text-decoration-none">info@adlibilisim.com</a></li>
+                            <li><i className="bi bi-envelope-fill me-2 "></i><a href="mailto:info@adlibilisim.com" className="text-light text-decoration-none">info@adlibilisim.com</a></li>
                             <li><i className="bi bi-telephone-fill me-2"></i><a href="tel:+905555555555" className="text-light text-decoration-none">+90 555 555 55 55</a></li>
                         </ul>
                     </div>
 
 
-                    <div className="col-md-4 mb-4">
-                        <h5 className="text-uppercase fw-bold mb-3">Bağlantılar</h5>
-                        <ul className="list-unstyled">
+                    <div className="col-md-3 ms-4 mb-4">
+                        <h5 className=" fw-bold mb-3 ms-3">BAĞLANTILAR</h5>
+                        <ul className="list-unstyled ms-3">
                             <li>  <Link className="text-light text-decoration-none" to="project" >Proje Fikirleri</Link></li>
                             <li><Link className="text-light text-decoration-none" to="/articles" >Makaleler</Link></li>
                             <li><Link className="text-light text-decoration-none" to="/about" >Hakkımızda</Link></li>

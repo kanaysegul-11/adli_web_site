@@ -1,16 +1,19 @@
 .dashboard {
-    max-width: 800px;
-    margin: 40px auto;
+    max-width: 1000px;
+    margin: 80px auto;
+    height: 500px;
     padding: 20px;
     background-color: #1e1e1e;
     color: #f0f0f0;
     border-radius: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+    gap: 30px;
     margin-bottom: 30px;
 }
 
