@@ -10,7 +10,7 @@ function Navbar() {
                 <Link to="/"><img src="/src/images/logo.jpg" alt="" /></Link>
             </div>
 
-            <a style={{ fontSize: "18px", marginRight: "410px" }}>Adli Bilişim</a>
+            <a style={{ fontSize: "18px", marginRight: "980px" }}>Adli Bilişim</a>
 
             <div className='nav-links'>
                 <Link to="/" >Anasayfa</Link>
